@@ -1,4 +1,4 @@
-package org.stackoverflow.dml;
+package org.testhibernate.dmlupdates;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

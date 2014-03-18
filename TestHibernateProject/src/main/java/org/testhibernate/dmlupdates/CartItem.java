@@ -1,4 +1,4 @@
-package org.stackoverflow.dml;
+package org.testhibernate.dmlupdates;
 
 import java.util.Date;
 

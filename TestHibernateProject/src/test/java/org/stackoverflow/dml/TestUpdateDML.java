@@ -12,6 +12,10 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.testhibernate.dmlupdates.Cart;
+import org.testhibernate.dmlupdates.CartItem;
+import org.testhibernate.dmlupdates.PersistentUnitLoader;
+import org.testhibernate.dmlupdates.Product;
 
 
 public class TestUpdateDML {

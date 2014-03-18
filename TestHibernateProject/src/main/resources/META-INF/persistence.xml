@@ -7,9 +7,10 @@
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
-		<class>org.stackoverflow.dml.Cart</class>
-		<class>org.stackoverflow.dml.CartItem</class>
-		<class>org.stackoverflow.dml.Product</class>
+		<class>org.testhibernate.dmlupdates.Cart</class>
+		<class>org.testhibernate.dmlupdates.CartItem</class>
+		<class>org.testhibernate.dmlupdates.Product</class>
+		<class>org.testhibernate.customid.MyObject</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<!-- hibernate properties -->
