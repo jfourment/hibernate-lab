@@ -11,6 +11,10 @@
 		<class>org.testhibernate.dmlupdates.CartItem</class>
 		<class>org.testhibernate.dmlupdates.Product</class>
 		<class>org.testhibernate.customid.MyObject</class>
+		<class>org.testhibernate.jaxb.User</class>
+		<class>org.testhibernate.jaxb.Profile</class>
+		<class>org.testhibernate.jaxb.SomeDependency</class>
+		<class>org.testhibernate.jaxb.SomeOtherType</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<!-- hibernate properties -->
