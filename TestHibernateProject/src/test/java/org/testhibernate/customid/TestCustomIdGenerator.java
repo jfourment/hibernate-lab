@@ -1,4 +1,4 @@
-package org.stackoverflow.customid;
+package org.testhibernate.customid;
 
 import javax.persistence.EntityManager;
 

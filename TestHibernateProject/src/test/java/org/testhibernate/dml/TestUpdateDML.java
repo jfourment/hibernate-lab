@@ -1,4 +1,4 @@
-package org.stackoverflow.dml;
+package org.testhibernate.dml;
 
 import static org.junit.Assert.*;
 
