@@ -5,16 +5,12 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
-@Table(name="PROFILE")
-@XmlRootElement(name="profile")
-public class Profile  implements Serializable {
+public class Stuff implements Serializable {
 
 	@Id
-	@Column(name = "PRFL_ID")
+	@Column(name = "STUFF_ID")
     private Long id;
 
 	public Long getId() {
@@ -24,6 +20,5 @@ public class Profile  implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
 	
 }

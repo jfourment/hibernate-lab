@@ -1,6 +1,7 @@
 package org.testhibernate.jaxb;
 
 import java.io.Serializable;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -8,14 +9,17 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
-import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.Immutable;
 
 @Immutable
 @Entity
 @Table(name = "USER_VW")
+@XmlRootElement(name = "user")
+
 public class User implements Serializable {
 
 	@ManyToOne(fetch = FetchType.LAZY, cascade=CascadeType.ALL)
@@ -29,6 +33,9 @@ public class User implements Serializable {
 	@ManyToOne(fetch = FetchType.LAZY, cascade=CascadeType.ALL)
 	private Profile profile;
 
+	@OneToMany(fetch = FetchType.LAZY, cascade=CascadeType.ALL)
+	private Set<Stuff> stuffs; 
+	
 	@Id
     private Long id;
 	
@@ -50,6 +57,7 @@ public class User implements Serializable {
 		someOtherType = otherType;
 	}
 
+	//@XmlJavaTypeAdapter(value=org.testhibernate.jaxb.adapter.SomeDependencyAdapter.class)
 	public SomeDependency getSomeDependency() {
 		return someDependency;
 	}
@@ -65,5 +73,14 @@ public class User implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
+	public Set<Stuff> getStuffs() {
+		return stuffs;
+	}
+
+	public void setStuffs(Set<Stuff> stuffs) {
+		this.stuffs = stuffs;
+	}
+
 
 }

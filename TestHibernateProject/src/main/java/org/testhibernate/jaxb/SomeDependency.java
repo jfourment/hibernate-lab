@@ -1,11 +1,13 @@
 package org.testhibernate.jaxb;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class SomeDependency {
+public class SomeDependency  implements Serializable {
 
 	@Id
 	@Column(name = "SM_DPND_ID")

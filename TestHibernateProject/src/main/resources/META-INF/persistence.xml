@@ -15,6 +15,7 @@
 		<class>org.testhibernate.jaxb.Profile</class>
 		<class>org.testhibernate.jaxb.SomeDependency</class>
 		<class>org.testhibernate.jaxb.SomeOtherType</class>
+		<class>org.testhibernate.jaxb.Stuff</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<properties>
 			<!-- hibernate properties -->
