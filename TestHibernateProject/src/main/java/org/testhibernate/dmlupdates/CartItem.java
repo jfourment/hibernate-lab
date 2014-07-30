@@ -14,7 +14,22 @@ import javax.persistence.Temporal;
 @Table(name="CART_ITEM")
 public class CartItem {
 
-    @Id
+    public CartItem() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public CartItem(long id, Cart cart, Product pro, Date addedDate,
+			Date removedDate) {
+		super();
+		this.id = id;
+		this.cart = cart;
+		this.pro = pro;
+		this.addedDate = addedDate;
+		this.removedDate = removedDate;
+	}
+
+	@Id
     //@GeneratedValue
     private long id;
 

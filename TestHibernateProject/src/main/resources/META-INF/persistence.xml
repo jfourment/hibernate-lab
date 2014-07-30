@@ -20,6 +20,7 @@
 		<properties>
 			<!-- hibernate properties -->
 			<property name="hibernate.show_sql" value="true" />
+			<!-- <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" />-->
 		</properties>
 
 	</persistence-unit>
