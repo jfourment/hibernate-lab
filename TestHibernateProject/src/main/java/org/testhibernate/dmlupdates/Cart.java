@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -17,7 +16,13 @@ import org.hibernate.annotations.LazyCollectionOption;
 @Table(name="CART")
 public class Cart implements Serializable {
 
-    @Id
+    public Cart(Long id, List<CartItem> items) {
+		super();
+		this.id = id;
+		this.items = items;
+	}
+
+	@Id
     //@GeneratedValue
     private Long id;
 
